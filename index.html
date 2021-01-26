@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DEMOS</title>    
+</head>
+<body>
+
+<div id="IziModal">
+<button data-izimodal-close="">Close</button>
+<img src="https://dainikazadi.net/wp-content/uploads/2021/01/65_Jan_21_Fakhris_fast-construction_GDN400X450_v1-1.gif" />
+</div>
+<style>
+#IziModal{
+background : none;
+box-shadow : none;
+}
+</style>
+<link rel="stylesheet" href="iziModal.min.css">
+<script src="jquery.min.js"></script>
+<script src="iziModal.min.js"></script>
+<script>
+   $(document).ready(function () {
+        $('#IziModal').iziModal('max-width', '400px');
+		 $("#IziModal").iziModal({ 				
+				autoOpen:2000,
+				width: 400
+		 });    	   
+    });		
+	setTimeout(function() { $('#IziModal').iziModal('close'); }, 100000);
+</script>
+
+
+</body>
+</html>
